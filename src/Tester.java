@@ -3,7 +3,7 @@ import ua.princeton.lib.StdIn;
 
 
 
-private class Tester {
+public class Tester {
 
 	public static void main(String[] args) {
 		In in = new In("dictionary.txt");
