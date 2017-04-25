@@ -1,0 +1,74 @@
+@keyframes slidy {
+    0% { left: 0%; }
+    10% { left: 0%; }
+    20% { left: -100%; }
+    30% { left: -100%; }
+    40% { left: -200%; }
+    50% { left: -200%; }
+    60% { left: -300%; }
+    70% { left: -300%; }
+    80% { left: -400%; }
+    90% { left: -400%; }
+    100% { left: 0%; }
+}
+figure { 
+    margin: 0;
+}
+#captioned-gallery {
+    position: relative;
+    top: 35px;
+    width: 100%; 
+    overflow: hidden; 
+}
+#captioned-gallery .slider .slider-item figcaption h2{
+    font-size: 3.5rem;
+    text-indent: 0.1em;
+    color: #fff;
+}
+#captioned-gallery .slider .slider-item figcaption h4{
+    font-size: 1.5rem;
+    color: #fff;
+}
+#captioned-gallery .slider .slider-item figcaption a{
+    font-size: 2.5rem;
+}
+figure.slider { 
+    position: relative; 
+    height: 25rem;
+    width: 500%;
+    font-size: 0; 
+    animation: 30s slidy infinite; 
+}
+figure.slider figure.slider-item {
+    width: 20%; 
+    height: inherit;
+    display: inline-flex; 
+}
+figure.slider-item img { 
+    position: fixed;
+    width: 100vw;
+    height: inherit;
+}
+figure.slider-item figcaption {
+    position: fixed;
+    width: 100%;
+    text-align: center;
+}
+@media handheld, only screen and (max-width:80em){
+    figure.slider{
+        height: 15rem;
+    }
+    figure.slider-item img { 
+        height: inherit;
+    }
+    #captioned-gallery .slider .slider-item figcaption h2{
+        font-size: 1.9rem;
+    }
+    #captioned-gallery .slider .slider-item figcaption h4{
+        font-size: 1rem;
+    }
+    #captioned-gallery .slider .slider-item figcaption a{
+        font-size: 1.2rem;
+    }
+}
+

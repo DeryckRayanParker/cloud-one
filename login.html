@@ -1,0 +1,99 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Meet Me</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Flexbox Responsive Grid -->
+        <!-- Categories Flat Icon -->
+        <link rel="stylesheet" href="fonts/flaticon.css">
+        <!-- Grid System -->
+        <link rel="stylesheet" href="css/flex-grid.css">
+        <!-- MENU -->
+        <link rel="stylesheet" href="css/nav-and-header-2.css">
+        <!-- Login -->
+        <link rel="stylesheet" href="css/login-form.css">
+        <!-- Button -->
+        <link rel="stylesheet" href="css/buttons.css">
+	</head>
+    <body>
+        <!--Start of Navigation Section -->
+        <nav class="nav" role="navigation">
+            <ul id="gn-menu" class="gn-menu-main">
+				<li class="gn-trigger">
+					<a class="gn-icon gn-icon-menu"><span class="fl-icon-menu flaticon-menu-lines"></span></a>
+					<nav class="gn-menu-wrapper">
+						<div class="gn-scroller">
+							<ul class="gn-menu">
+                                <li>
+                                    <a class="gn-icon flaticon-small-house">Home</a>
+                                </li>
+								<li>
+									<a class="gn-icon flaticon-car-wheel">Explore</a>
+								</li>
+								<li>
+                                    <a class="gn-icon flaticon-map-location-pointer">Events</a>
+                                </li>
+								<li>
+                                    <a class="gn-icon flaticon-technology">Organizers</a>
+                                </li>
+								<li>
+									<a class="gn-icon flaticon-black-phone-auricular">Contact</a>
+								</li>
+                                <li>
+									<a class="gn-icon flaticon-question-mark-draw">FAQ</a>
+								</li>
+							</ul>
+						</div><!-- /gn-scroller -->
+					</nav>
+				</li>
+				<li class="second-li-logo">
+                    <a class="seek-logo" href="#"><img class="hidden-sm" src="images/seekvent.png"></a>
+                </li>
+                <li>
+                <a class="item-menu container-3">
+                    <i class="input-icon fl-icon-menu flaticon-tool-1"></i>
+                    <input type="search" id="search" placeholder="Search">
+                </a>
+                </li>
+                <li>
+                    <a class="item-menu" href="login.html">
+                        <span class="fl-icon-menu flaticon-user-avatar"></span>
+                        <span class="fl-text-menu">Sign In</span>
+                    </a>
+                    <a class="item-menu" href="register.html">
+                        <span class="fl-icon-menu flaticon-first-aid-cross"></span>
+                        <span class="fl-text-menu">Sign Up</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <!--End of Navigation Section -->
+        
+        <!--Start of Login Form -->
+        <div class="form">
+            <div class="login-top">
+                <center><a href="login.html">Sign In Your Account</a></center>
+            </div>
+            <form action="" method="post">
+                <input type="text" placeholder="Username" required>
+                <span class="line"></span>
+                <input type="password" placeholder="Your Password" required>
+                <span class="line"></span>
+                <div class="grid-noGutter">
+                    <a class="col-3 silver-bg white" href="register.html" id="send">Login</a>
+                    <a class="col-3 silver-bg white" href="register.html" id="send">Register</a>
+                </div>
+            </form>
+            <div class="login-bottom">
+                <center><a href="#">Click here if you forget the password.</a></center>
+            </div>
+        </div>
+        <!-- End of Login Form -->
+        <script src="js/classie.js"></script>
+		<script src="js/gnmenu.js"></script>
+		<script>
+			new gnMenu( document.getElementById( 'gn-menu' ) );
+		</script>
+    </body>
+</html>
